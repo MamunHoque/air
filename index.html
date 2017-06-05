@@ -1,0 +1,135 @@
+
+
+<!DOCTYPE html>
+<html class="gr__birme_net" lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <title>A.I.R. - Advanced Image Resizer(Online &amp; Free)</title>
+      <script type="text/javascript" src="assets/p.js" async=""></script><script type="text/javascript" id="async-buttons" src="assets/async-buttons.js"></script><script id="facebook-jssdk" src="assets/sdk.js"></script><script type="text/javascript" async="" src="assets/ga.js"></script><script src="assets/jquery.js"></script>
+      <script src="assets/jquery-ui.js"></script>
+      <script src="assets/jszip.js"></script>
+      <link rel="stylesheet" href="assets/style.css">
+      <meta property="fb:admins" content="671280598">
+      <meta property="og:title" content="A.I.R - Batch Image Resizing Made Easy">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="http://birme.net/">
+      <meta property="og:image" content="http://birme.net/images/logo.jpg">
+      <meta property="og:site_name" content="A.I.R">
+      <meta property="og:description" content="BIRME is a flexible and easy to use batch image resizer. It can resize your images to any specific dimensions and crop your images proportionately if necessary. It's an online tool and that means you don't need to download or install anything on your computer. BIRME is absolutely free to use.">
+      <script id="_carbonads_projs" type="text/javascript" src="assets/CVYD42T.js"></script>
+      <link rel="stylesheet" type="text/css" href="assets/buttons.css">
+      <script type="text/javascript" src="assets/increment_clicks.asc"></script><script type="text/javascript" src="assets/get_counts.json"></script><script type="text/javascript" src="assets/increment_clicks.asc"></script><script type="text/javascript" src="assets/increment_clicks.asc"></script><script type="text/javascript" src="assets/increment_clicks.asc"></script><iframe id="stSegmentFrame" name="stSegmentFrame" scrolling="no" sandbox="allow-scripts allow-same-origin" style="display:none;" width="0px" height="0px" frameborder="0"></iframe>
+    
+      </style>
+   </head>
+   <body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+      <div id="main-content" class="page-wide-elements">
+         <div style="display:inline-block;float:left">
+            <img src="assets/logo.jpg" alt="birme" width="100" height="100">
+         </div>
+         <div style="margin-left:20px;display:inline-block;float:left;width:730px">
+            <h2>Advanced Image Resizer</h2>
+            <p>BIRME is a flexible and easy to use batch image resizer. It can resize your images to any specific dimensions
+               and crop your images proportionately if necessary. It's an online tool and that means you don't need to
+               download or install anything on your computer. BIRME is absolutely free to use.
+            </p>
+         </div>
+         <div style="clear:both;margin-bottom:5px;"></div>
+         <script async="" type="text/javascript" src="assets/carbon.js" id="_carbonads_js"></script>
+         <div id="left" class="workarea">
+            <div id="preview">
+               <div id="dragOverlay2" style="height:100%; overflow:hidden; opacity:.3; letter-spacing:.3em;">
+                  <h2 style="position:relative; top:45%;">DRAG AND DROP FILES HERE</h2>
+               </div>
+               <div id="dragOverlay1" style="height:100%; background:#000; opacity:0; position:relative; top:-100%;"></div>
+               <div id="dragDropArea" style="height:100%; position:relative; top:-200%; overflow:auto;"></div>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div id="browse-hit-area" class="button-image">
+               <input id="browse" class="browse-btn" multiple="" type="file">
+               <input id="browse2" class="browse-btn" multiple="" type="file">
+               <br>
+               <input id="browse3" class="browse-btn" multiple="" type="file">
+               <input id="browse4" class="browse-btn" multiple="" type="file">
+               <br>
+            </div>
+            <div id="clear" class="button-image"></div>
+            <div id="downloadify" class="button-image" style="float: right; display: none;" onclick="generate()"></div>
+         </div>
+         <div id="right" style="margin-left:3em;" class="workarea">
+
+            <div class="spacer"></div>
+            <div id="resize-tab" class="tab-contents">
+               <p> <span id="resizeByDimText" class="individual-contents">
+                  <input name="resizeByBtn" id="resizeByDim" value="dim" checked="checked" type="radio">
+                  Resize and crop to dimensions: </span>
+               </p>
+               <div id="resizeByDimContent" class="individual-contents" style="opacity: 1;">
+                  <span id="dimText" class="subcontrol">Width:
+                  <input id="widthText" class="num-field" style="opacity: 1;" value="800" type="text">
+                  px &nbsp;Height:
+                  <input id="heightText" class="num-field" style="opacity: 1;" value="600" type="text">
+                  px</span> <br>
+                  <br>
+                  <span id="flexiblility" style="margin-left:1.2em">
+                  <input id="noAuto" name="flexBtns" value="none" checked="checked" type="radio">
+                  No auto-sizing &nbsp;
+                  <input id="autoHeight" name="flexBtns" value="height" type="radio">
+                  Auto-height &nbsp;
+                  <input id="autoWidth" name="flexBtns" value="width" type="radio">
+                  Auto-width</span> <br>
+                  <br>
+                  <span id="cropPriority" class="subcontrol">
+                     Crop align: X:
+                     <select id="cropAlignX">
+                        <option value="left">Left</option>
+                        <option value="center" selected="selected">Center</option>
+                        <option value="right">Right</option>
+                     </select>
+                     &nbsp;&nbsp;Y:
+                     <select id="cropAlignY">
+                        <option value="top">Top</option>
+                        <option value="center" selected="selected">Center</option>
+                        <option value="bottom">Bottom</option>
+                     </select>
+                  </span>
+                  <br>
+                  <br>
+               </div>
+               <br>
+               <div id="resizeByPercContent" class="individual-contents">
+                  <input name="resizeByBtn" id="resizeByPerc" value="perc" type="radio">
+                  Resize by percentage: &nbsp; <span id="resizeByPercText" style="opacity: 0.5;">
+                  <input id="percText" class="num-field" disabled="disabled" value="100" type="text">
+                  %</span> <br>
+                  <br>
+               </div>
+               <br>
+               <div id="borderContent" class="individual-contents"> <span id="borderSpan">Border thickness: &nbsp;
+                  <input id="borderWidthText" class="num-field" value="0" type="text">
+                  px</span>
+               </div>
+               <div id="qualityContent" class="individual-contents"> <span id="qualitySpan">JPG quality setting: &nbsp;
+                  <input id="qualityText" class="num-field" value="80" type="text">
+                  %</span>
+               </div>
+               <br>
+            </div>
+         </div>
+      </div>
+      <div style="clear:both"></div>
+   
+      <div id="contact-info"><a href="http://wewearglasses.com/">©2017</a>&nbsp;,&nbsp; <a href="">FEEDBACK</a></div>
+      <script src="assets/birme-user-settings.js"></script>
+      <script src="assets/birme-utils.js"></script>
+      <script src="assets/birme-image-object.js"></script>
+      <script src="assets/birme-main.js"></script>
+      <script type="text/javascript">var switchTo5x = true;</script>
+      <script type="text/javascript" src="assets/buttons.js"></script>
+      <div id="stwrapper" class="stwrapper stwrapper5x stwrapper5x" style="display: none;"><iframe allowtransparency="true" id="stLframe" class="stLframe" name="stLframe" scrolling="no" src="assets/index.html" frameborder="0"></iframe></div>
+      <div id="stOverlay" onclick="javascript:stWidget.closeWidget();"></div>
+   </body>
+</html>
+
